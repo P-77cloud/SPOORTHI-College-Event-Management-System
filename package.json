@@ -1,0 +1,25 @@
+{
+  "name": "spoorthi-college-event-management",
+  "version": "1.0.0",
+  "description": "SPOORTHI - College Event Management System",
+  "main": "server/server.js",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "college",
+    "event-management",
+    "express",
+    "react",
+    "mongodb"
+  ],
+  "author": "Antigravity",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
